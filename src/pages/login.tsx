@@ -14,9 +14,14 @@ export const Login = () => {
       <h1 className="heading">Sign in to GitHub</h1>
       <Formik onSubmit={submit} enableReinitialize initialValues={credentials}>
         <Form>
-          <label htmlFor="username">Username or email address</label>
-          <Field name="username" label="username" component={Input}></Field>
-          <button type="submit">Sign in</button>
+          <section className="container">
+            <label htmlFor="username">Username or email address</label>
+            <Field name="username" label="username" component={Input} />
+            <label htmlFor="username">Password</label>
+            <Field name="password" label="password" component={Input} />
+            <br></br>
+            <button type="submit">Sign in</button>
+          </section>
         </Form>
       </Formik>
     </section>
