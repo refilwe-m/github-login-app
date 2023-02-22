@@ -16,9 +16,21 @@ export const Login = () => {
         <Form>
           <section className="container">
             <label htmlFor="username">Username or email address</label>
-            <Field name="username" label="username" component={Input} />
-            <label htmlFor="username">Password</label>
-            <Field name="password" label="password" component={Input} />
+            <Field
+              name="username"
+              label="username"
+              id="username"
+              type="text"
+              component={Input}
+            />
+            <label htmlFor="password">Password</label>
+            <Field
+              name="password"
+              type="password"
+              label="password"
+              id="password"
+              component={Input}
+            />
             <br></br>
             <button type="submit">Sign in</button>
           </section>
